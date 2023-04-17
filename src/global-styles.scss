@@ -1,0 +1,111 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+html {
+  --color-primary: hsl(0, 0%, 100%);
+  --color-secondary: hsl(0, 0%, 0%);
+  --color-tertiary: hsl(0, 0%, 19%);
+
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 12.5rem;
+  line-height: 12.5rem;
+  letter-spacing: -5;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.25rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -4;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  letter-spacing: 4;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
+  letter-spacing: 3;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
