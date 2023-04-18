@@ -67,7 +67,7 @@ h1 {
   font-weight: 700;
   font-size: 12.5rem;
   line-height: 12.5rem;
-  letter-spacing: -5;
+  letter-spacing: -5px;
 }
 
 h2 {
@@ -80,7 +80,7 @@ h3 {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.75rem;
-  letter-spacing: -4;
+  letter-spacing: -4px;
   text-transform: uppercase;
 }
 
@@ -88,7 +88,7 @@ h4 {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  letter-spacing: 4;
+  letter-spacing: 4px;
 }
 
 h5 {
@@ -101,7 +101,8 @@ h6 {
   font-weight: 700;
   font-size: 0.9375rem;
   line-height: 1.75rem;
-  letter-spacing: 3;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 body {

@@ -1,0 +1,33 @@
+.mainContainer {
+  color: var(--color-primary);
+  margin-top: auto;
+}
+
+.greetingBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    align-self: center;
+  }
+}
+
+.timeBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3125rem;
+}
+
+.time {
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  letter-spacing: -2.5px;
+}
+
+.timezone {
+  font-weight: 400;
+  align-self: flex-end;
+}

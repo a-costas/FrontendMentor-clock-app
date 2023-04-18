@@ -1,0 +1,18 @@
+.appContainer {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 1.625rem;
+}
+
+.nighttime {
+  background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
+    url(../../assets/mobile/bg-image-nighttime.jpg);
+}
+
+.daytime {
+  background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
+    url(../../assets/mobile/bg-image-daytime.jpg);
+}
