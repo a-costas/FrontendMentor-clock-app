@@ -4,13 +4,15 @@ import Main from "../Main/Main";
 import Quote from "../Quote";
 import "./App.scss";
 
+import { isDaytime } from "../../utils/helpers";
+
 function App() {
-  const [isDaytime, setIsDaytime] = useState(false);
+  // const [isDaytime, setIsDaytime] = useState(false);
 
   return (
-    <div className={"appContainer " + (isDaytime ? "daytime" : "nighttime")}>
+    <div className={"appContainer " + (isDaytime() ? "daytime" : "nighttime")}>
       <Quote />
-      <Main setIsDaytime={setIsDaytime} />
+      <Main />
     </div>
   );
 }
