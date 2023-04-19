@@ -1,8 +1,16 @@
 .drawerWrapper {
-  background: linear-gradient(
-    rgba(255, 255, 255, 70%),
-    rgba(255, 255, 255, 70%)
-  );
+  &.drawerDaytime {
+    background: linear-gradient(
+      rgba(255, 255, 255, 70%),
+      rgba(255, 255, 255, 70%)
+    );
+    color: var(--color-secondary);
+  }
+
+  &.drawerNighttime {
+    background: linear-gradient(rgba(0, 0, 0, 80%), rgba(0, 0, 0, 80%));
+    color: var(--color-primary);
+  }
 
   padding: 3rem 1.625rem;
 

@@ -12,11 +12,9 @@
   position: relative;
 }
 
-// .expandedWrapper {
-//   transform: translateY(50%);
-//   will-change: transform;
-//   transition: transform 2s ease-in-out;
-// }
+.invisible {
+  display: none;
+}
 
 .nighttime {
   background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),

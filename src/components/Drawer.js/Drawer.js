@@ -1,19 +1,18 @@
 import React from "react";
 
 import "./Drawer.scss";
-
 import useFetch from "../../hooks/useFetch";
 import { ENDPOINTS } from "../../utils/constants";
+import { isDaytime } from "../../utils/helpers";
 
 function Drawer({ isExpanded }) {
   const { data: timezoneData, loading, error } = useFetch(ENDPOINTS.timezone);
-  console.log(timezoneData);
 
   return (
     <div
       className={`drawerWrapper ${
-        isExpanded ? "expandedWrapper" : "collapsedWrapper"
-      }`}
+        isExpanded ? "expandedWrapper " : "collapsedWrapper "
+      } ${isDaytime() ? "drawerDaytime" : "drawerNighttime"}`}
     >
       <div className="drawerContent">
         <div className="dataRow">

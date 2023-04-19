@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Main from "../Main/Main";
+import Main from "../Main";
 import Quote from "../Quote";
 import "./App.scss";
 
@@ -15,7 +15,9 @@ function App() {
       <div
         className={"appContainer " + (isDaytime() ? "daytime" : "nighttime")}
       >
-        {isExpanded ? "" : <Quote />}
+        <div className={"quoteWrapper " + (isExpanded ? "invisible" : "")}>
+          <Quote />
+        </div>
         <div className={`mainWrapper`}>
           <Main isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
         </div>
