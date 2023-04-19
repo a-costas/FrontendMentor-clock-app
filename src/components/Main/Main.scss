@@ -51,7 +51,7 @@
 .time {
   font-size: 6.25rem;
   line-height: 6.25rem;
-  letter-spacing: -2.5px;
+  letter-spacing: -0.1563rem;
 }
 
 .timezone {
@@ -78,7 +78,7 @@
     font-weight: 700;
     font-size: 0.75rem;
     line-height: 0.875rem;
-    letter-spacing: 3.75px;
+    letter-spacing: 0.2344rem;
     text-transform: uppercase;
     align-self: center;
   }
@@ -96,5 +96,72 @@
   .collapsed {
     transform: rotate(180deg);
     transition: transform 1s;
+  }
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    &.expandedWrapper {
+      transform: translateY(-125%);
+      will-change: transform;
+      transition: transform 2s ease-in-out;
+    }
+
+    &.collapsedWrapper {
+      transform: translateY(0%);
+      will-change: transform;
+      transition: transform 2s ease-in-out;
+    }
+  }
+
+  .greetingBlock {
+    .icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      align-self: center;
+    }
+
+    h6 {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.225rem;
+    }
+  }
+
+  .time {
+    font-size: 10.9375rem;
+    line-height: 10.9375rem;
+    letter-spacing: -0.2737rem;
+  }
+
+  .timezone {
+    font-size: 2rem;
+    line-height: 1.75rem;
+  }
+
+  .location {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .drawerBtn {
+    width: 146px;
+    background-color: var(--color-primary);
+    padding-top: 0.5rem;
+    padding-right: 0.5625rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.3125rem;
+
+    .drawerLabel {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.3125rem;
+    }
+
+    .arrowIcon {
+      margin-left: auto;
+      height: 2.5rem;
+    }
   }
 }

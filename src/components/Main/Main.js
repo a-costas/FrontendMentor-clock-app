@@ -47,7 +47,7 @@ function Main({ isExpanded, setIsExpanded }) {
             {locationData.timezone ? locationData.timezone.abbr : ""}
           </h6>
         </div>
-        <h6>
+        <h6 className="location">
           In {locationData.region}, {locationData.country_code}
         </h6>
       </div>

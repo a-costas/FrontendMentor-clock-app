@@ -29,3 +29,19 @@
   flex-direction: row;
   gap: 1rem;
 }
+
+@media (min-width: 768px) {
+  .quoteContainer {
+    gap: 0.8125rem;
+    .icon {
+      height: 1.5rem;
+      margin-top: 0.25rem;
+    }
+  }
+
+  .quote,
+  .quoteCitation {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}

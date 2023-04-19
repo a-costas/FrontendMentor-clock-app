@@ -1,4 +1,7 @@
 .drawerWrapper {
+  position: fixed;
+  width: 100%;
+
   &.drawerDaytime {
     background: linear-gradient(
       rgba(255, 255, 255, 70%),
@@ -30,7 +33,7 @@
     font-weight: 400;
     font-size: 0.625rem;
     line-height: 1.75rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
   }
 }
 
@@ -47,4 +50,51 @@
 
 .dataBit {
   margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .drawerWrapper {
+    position: fixed;
+    width: 100%;
+
+    padding-top: 7.4375rem;
+    padding-bottom: 7.4375rem;
+    padding-left: 4rem;
+
+    &.expandedWrapper {
+      transform: translateY(-100%);
+      will-change: transform;
+      transition: transform 2s ease-in-out;
+    }
+
+    &.collapsedWrapper {
+      transform: translateY(0%);
+      will-change: transform;
+      transition: transform 2s ease-in-out;
+    }
+
+    h6 {
+      font-weight: 400;
+      font-size: 0.8125rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.1625rem;
+    }
+  }
+
+  .drawerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .dataRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dataBit {
+    margin-left: 0;
+    font-size: 2.5rem;
+    line-height: 3.0256rem;
+  }
 }
