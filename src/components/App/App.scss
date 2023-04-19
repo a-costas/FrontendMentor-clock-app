@@ -49,3 +49,26 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: 1024px) {
+  .appContainer {
+    padding-top: 3.5rem;
+    padding-bottom: 6.125rem;
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+  }
+
+  .nighttime {
+    background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
+      url(../../assets/desktop/bg-image-nighttime.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .daytime {
+    background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
+      url(../../assets/desktop/bg-image-daytime.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

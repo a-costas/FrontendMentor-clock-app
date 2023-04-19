@@ -98,3 +98,33 @@
     line-height: 3.0256rem;
   }
 }
+
+@media (min-width: 768px) {
+  .drawerWrapper {
+    position: fixed;
+    width: 100%;
+
+    padding-top: 4.625rem;
+    padding-bottom: 4.625rem;
+    padding-left: 10.3125rem;
+
+    h6 {
+      font-weight: 400;
+      font-size: 0.9375rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.1875rem;
+    }
+  }
+
+  .drawerContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .dataBit {
+    margin-left: 0;
+    font-size: 3.5rem;
+    line-height: 4.2356rem;
+  }
+}

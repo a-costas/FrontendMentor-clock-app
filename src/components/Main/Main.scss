@@ -165,3 +165,80 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .mainContainer {
+    flex-direction: row;
+
+    &.expandedWrapper {
+      transform: translateY(-125%);
+      will-change: transform;
+      transition: transform 2s ease-in-out;
+    }
+
+    &.collapsedWrapper {
+      transform: translateY(0%);
+      will-change: transform;
+      transition: transform 2s ease-in-out;
+    }
+  }
+
+  .greetingBlock {
+    .icon {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+
+    h6 {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.25rem;
+    }
+  }
+
+  .timeBlock {
+    gap: 0.6875rem;
+  }
+
+  .time {
+    font-size: 12.5rem;
+    line-height: 12.5rem;
+    letter-spacing: -0.3125rem;
+  }
+
+  .timezone {
+    font-size: 2.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.6875rem;
+  }
+
+  .location {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .drawerBtn {
+    margin-left: auto;
+    height: 3.5rem;
+    width: 146px;
+    background-color: var(--color-primary);
+    padding-top: 0.5rem;
+    padding-right: 0.5625rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.3125rem;
+
+    align-self: flex-end;
+
+    .drawerLabel {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.3125rem;
+    }
+
+    .arrowIcon {
+      margin-left: auto;
+      height: 2.5rem;
+    }
+  }
+}
