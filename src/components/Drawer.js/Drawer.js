@@ -6,7 +6,7 @@ import { ENDPOINTS } from "../../utils/constants";
 import { isDaytime } from "../../utils/helpers";
 
 function Drawer({ isExpanded }) {
-  const { data: timezoneData, loading, error } = useFetch(ENDPOINTS.timezone);
+  const { data: timezoneData } = useFetch(ENDPOINTS.timezone);
 
   return (
     <div
