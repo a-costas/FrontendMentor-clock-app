@@ -7,6 +7,17 @@
   padding: 2rem 1.625rem;
 }
 
+.mainWrapper {
+  margin-top: auto;
+  position: relative;
+}
+
+// .expandedWrapper {
+//   transform: translateY(50%);
+//   will-change: transform;
+//   transition: transform 2s ease-in-out;
+// }
+
 .nighttime {
   background: linear-gradient(rgba(0, 0, 0, 40%), rgba(0, 0, 0, 40%)),
     url(../../assets/mobile/bg-image-nighttime.jpg);

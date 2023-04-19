@@ -5,15 +5,23 @@ import Quote from "../Quote";
 import "./App.scss";
 
 import { isDaytime } from "../../utils/helpers";
+import Drawer from "../Drawer.js/Drawer";
 
 function App() {
-  // const [isDaytime, setIsDaytime] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className={"appContainer " + (isDaytime() ? "daytime" : "nighttime")}>
-      <Quote />
-      <Main />
-    </div>
+    <>
+      <div
+        className={"appContainer " + (isDaytime() ? "daytime" : "nighttime")}
+      >
+        {isExpanded ? "" : <Quote />}
+        <div className={`mainWrapper`}>
+          <Main isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+        </div>
+      </div>
+      <Drawer isExpanded={isExpanded} />
+    </>
   );
 }
 

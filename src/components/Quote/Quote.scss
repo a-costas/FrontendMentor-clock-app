@@ -1,11 +1,11 @@
 .quoteContainer {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
 
   color: var(--color-primary);
 
   .icon {
+    margin-left: auto;
     height: 1rem;
     cursor: pointer;
     transform: rotate(180deg);
