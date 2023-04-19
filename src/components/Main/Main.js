@@ -38,7 +38,7 @@ function Main({ isExpanded, setIsExpanded }) {
           ) : (
             <img className="icon" src={moonIcon} alt="moon" />
           )}
-          <p>{getGreeting()}</p>
+          <h6>{getGreeting()}</h6>
         </div>
         <VisuallyHidden>Time and location</VisuallyHidden>
         <div className="timeBlock">

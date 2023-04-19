@@ -13,13 +13,13 @@ export const getTime = () => {
 export const getGreeting = () => {
   const hour = new Date().getHours();
   if (hour >= 5 && hour < 12) {
-    return "Good Morning!";
+    return "Good Morning";
   } else if (hour >= 12 && hour < 18) {
-    return "Good Afternoon!";
+    return "Good Afternoon";
   } else if (hour >= 18 && hour < 23) {
-    return "Good evening!";
+    return "Good evening";
   } else {
-    return "Good night!";
+    return "Good night";
   }
 };
 
