@@ -43,9 +43,9 @@ function Main({ isExpanded, setIsExpanded }) {
         <VisuallyHidden>Time and location</VisuallyHidden>
         <div className="timeBlock">
           <h1 className="time">{time}</h1>
-          <h6 className="timezone">
+          <p className="timezone">
             {locationData.timezone ? locationData.timezone.abbr : ""}
-          </h6>
+          </p>
         </div>
         <h6 className="location">
           In {locationData.region}, {locationData.country_code}

@@ -5,14 +5,6 @@ export const getTime = () => {
     hour: "2-digit",
     minute: "2-digit",
   });
-  // .replace(" AM", "")
-  // .replace(" PM", "")
-  // .replace(" am", "")
-  // .replace(" pm", "")
-  // .replace(" a.m.", "")
-  // .replace(" p.m.", "")
-  // .replace(" a. m.", "")
-  // .replace(" p. m.", "");
 };
 
 export const getGreeting = () => {

@@ -11,7 +11,7 @@ function App() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <>
+    <main>
       <div
         className={"appContainer " + (isDaytime() ? "daytime" : "nighttime")}
       >
@@ -23,7 +23,7 @@ function App() {
         </div>
       </div>
       <Drawer isExpanded={isExpanded} />
-    </>
+    </main>
   );
 }
 

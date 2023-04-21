@@ -57,6 +57,7 @@
 .timezone {
   font-weight: 400;
   align-self: flex-end;
+  letter-spacing: 3px;
 }
 
 .drawerBtn {
@@ -135,8 +136,14 @@
   }
 
   .timezone {
+    // font-weight: 700;
+    // font-size: 0.9375rem;
+    // line-height: 1.75rem;
+    // text-transform: uppercase;
+
     font-size: 2rem;
     line-height: 1.75rem;
+    letter-spacing: 3px;
   }
 
   .location {
