@@ -20,12 +20,12 @@ body {
   min-height: 100dvh;
 }
 
-@supports (-webkit-touch-callout: none) {
-  body {
-    /* The hack for Safari */
-    height: -webkit-fill-available;
-  }
-}
+// @supports (-webkit-touch-callout: none) {
+//   body {
+//     /* The hack for Safari */
+//     height: -webkit-fill-available;
+//   }
+// }
 
 body {
   line-height: 1.5;
