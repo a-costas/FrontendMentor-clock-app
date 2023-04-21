@@ -26,7 +26,7 @@ function Main({ isExpanded, setIsExpanded }) {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <main
+    <div
       className={`mainContainer ${
         isExpanded ? "expandedWrapper" : "collapsedWrapper"
       }`}
@@ -61,7 +61,7 @@ function Main({ isExpanded, setIsExpanded }) {
           alt="arrow down"
         />
       </button>
-    </main>
+    </div>
   );
 }
 
