@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site](https://6441f2daef248b0007a4e9a3--clever-selkie-753d52.netlify.app/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-clock-app-using-react-and-sass-WubIq_-VR0)
+- Live Site URL: [Live site](https://6441fc1c0228d400081bd488--clever-selkie-753d52.netlify.app/)
 
 ## My process
 
