@@ -1,19 +1,18 @@
 export const getTime = () => {
   const date = new Date();
-  return date
-    .toLocaleTimeString([], {
-      hour12: true,
-      hour: "2-digit",
-      minute: "2-digit",
-    })
-    .replace(" AM", "")
-    .replace(" PM", "")
-    .replace(" am", "")
-    .replace(" pm", "")
-    .replace(" a.m.", "")
-    .replace(" p.m.", "")
-    .replace(" a. m.", "")
-    .replace(" p. m.", "");
+  return date.toLocaleTimeString([], {
+    hour12: false,
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  // .replace(" AM", "")
+  // .replace(" PM", "")
+  // .replace(" am", "")
+  // .replace(" pm", "")
+  // .replace(" a.m.", "")
+  // .replace(" p.m.", "")
+  // .replace(" a. m.", "")
+  // .replace(" p. m.", "");
 };
 
 export const getGreeting = () => {
