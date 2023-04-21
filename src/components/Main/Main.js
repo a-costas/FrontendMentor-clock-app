@@ -38,7 +38,10 @@ function Main({ isExpanded, setIsExpanded }) {
           ) : (
             <img className="icon" src={moonIcon} alt="moon" />
           )}
-          <h6>{getGreeting()}</h6>
+          <p className="greeting">
+            {getGreeting()}
+            <span className="currently">, It's currently</span>
+          </p>
         </div>
         <VisuallyHidden>Time and location</VisuallyHidden>
         <div className="timeBlock">
@@ -47,9 +50,9 @@ function Main({ isExpanded, setIsExpanded }) {
             {locationData.timezone ? locationData.timezone.abbr : ""}
           </p>
         </div>
-        <h6 className="location">
+        <p className="location">
           In {locationData.region}, {locationData.country_code}
-        </h6>
+        </p>
       </div>
       <button className="drawerBtn" onClick={() => setIsExpanded(!isExpanded)}>
         <label className="drawerLabel" aria-hidden="true">
